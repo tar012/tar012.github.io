@@ -1,0 +1,305 @@
+/*
+  This CSS file contains all the styling for the My Shop Gym Equipment website.
+  It is a complete, standalone CSS file and does not use a framework like Tailwind.
+*/
+
+/* General body and font styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Reusable container for content */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.main-nav a {
+    color: #4b5563;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+    color: #4f46e5;
+}
+
+/* Main section styles */
+.main-section {
+    padding: 3rem 0;
+}
+
+.section-container {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* About section specific styles */
+.about-section .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-section .text-content {
+    flex: 1;
+}
+
+.about-section .tagline {
+    font-weight: bold;
+    font-style: italic;
+    color: #4f46e5;
+}
+
+/* Video styles */
+.video-container {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.video-caption {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* Category and product grid styles */
+.category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #374151;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.product-spec, .product-benefit, .product-warranty {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+}
+
+.product-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.btn-detail {
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-detail:hover {
+    background-color: #3730a3;
+}
+
+/* About store section styles */
+.about-store-section {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem auto;
+}
+
+.about-store-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-store-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About contact section styles */
+.contact-section {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: #1a202c;
+    color: #cbd5e1;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-footer p {
+    margin: 0.5rem 0;
+}
+
+.main-footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .about-section .content-wrapper {
+        flex-direction: row;
+    }
+    .video-container {
+        flex: 1;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding: 0;
+    }
+}
